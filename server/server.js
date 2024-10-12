@@ -4,11 +4,11 @@ import favicon from "serve-favicon";
 import dotenv from "dotenv";
 
 // import the router from your routes file
-import carsRouter from "./routes/carsRouter.js";
-import exteriorsRouter from "./routes/exteriorsRouter.js";
-import interiorsRouter from "./routes/interiorsRouter.js";
-import roofsRouter from "./routes/roofsRouter.js";
-import wheelsRouter from "./routes/wheelsRouter.js";
+import carsRouter from "./routes/cars.js";
+import exteriorsRouter from "./routes/exteriors.js";
+import interiorsRouter from "./routes/interiors.js";
+import roofsRouter from "./routes/roofs.js";
+import wheelsRouter from "./routes/wheels.js";
 
 dotenv.config();
 

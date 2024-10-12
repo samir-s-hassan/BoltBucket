@@ -1,5 +1,5 @@
 import express from "express";
-import roofsController from "../controllers/roofsController.js";
+import roofsController from "../controllers/roofs.js";
 
 const roofsRouter = express.Router();
 

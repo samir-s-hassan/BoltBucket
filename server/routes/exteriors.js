@@ -1,5 +1,5 @@
 import express from "express";
-import exteriorsController from "../controllers/exteriorsController.js";
+import exteriorsController from "../controllers/exteriors.js";
 
 const exteriorsRouter = express.Router();
 

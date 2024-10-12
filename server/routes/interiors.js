@@ -1,5 +1,5 @@
 import express from "express";
-import interiorsController from "../controllers/interiorsController.js";
+import interiorsController from "../controllers/interiors.js";
 
 const interiorsRouter = express.Router();
 
