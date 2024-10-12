@@ -104,3 +104,5 @@ const interiorsData = [
     iscombo: null,
   },
 ];
+
+export default interiorsData;

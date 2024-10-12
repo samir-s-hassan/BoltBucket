@@ -1,4 +1,4 @@
-const cars = [
+const carsData = [
   {
     id: 1,
     name: "Mustang GT",
@@ -251,4 +251,4 @@ const cars = [
   },
 ];
 
-export default cars;
+export default carsData;

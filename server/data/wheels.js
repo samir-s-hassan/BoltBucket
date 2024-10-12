@@ -56,3 +56,5 @@ const wheelsData = [
     price: 800,
   },
 ];
+
+export default wheelsData;

@@ -48,3 +48,5 @@ const roofsData = [
     isconvertible: true,
   },
 ];
+
+export default roofsData;

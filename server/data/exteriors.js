@@ -70,3 +70,5 @@ const exteriorsData = [
     price: 1000,
   },
 ];
+
+export default exteriorsData;
