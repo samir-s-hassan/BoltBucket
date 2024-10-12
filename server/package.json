@@ -31,6 +31,7 @@
     "convert-source-map": "^1.9.0",
     "cookie": "^0.5.0",
     "cookie-signature": "^1.0.6",
+    "cors": "^2.8.5",
     "csstype": "^3.1.1",
     "date-fns": "^2.29.3",
     "debug": "^4.3.4",
@@ -175,7 +176,6 @@
     "yargs-parser": "^21.1.1"
   },
   "type": "module",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production && node --require dotenv/config server.js",
