@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+:root {
+    --font-family: 'Rubik', Verdana, sans-serif;
+    --primary: rgb(115, 2, 12);
+    --primary-hover: black;
+    --color: white;
+    --h1-color: var(--color);
+    --h2-color: var(--color);
+    --h3-color: var(--color);
+    --card-background-color: rgba(0, 0, 0, 0.8);
+    --card-sectioning-background-color: rgba(0, 0, 0, 0.8);
+    --form-element-active-border-color: var(--color);
+    --form-element-placeholder-color: gray;
+}
+
+.view-cars {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.view-cars h2 {
+    color: var(--h2-color);
+    font-size: 2.5rem;
+    font-family: var(--font-family);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.car-card {
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--card-background-color);
+    color: var(--color);
+    font-family: var(--font-family);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car-card h3 {
+    color: var(--h3-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.car-card p {
+    margin-bottom: 10px;
+}
+
+.details-button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color);
+    background-color: var(--primary);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: var(--primary-hover);
+    border: 2px solid var(--color);
+}
+
+.car-card h3, .car-card p {
+    margin-bottom: 8px;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}

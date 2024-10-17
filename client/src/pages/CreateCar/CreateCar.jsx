@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../css/CreateCar.css";
-import CarsAPI from "../services/CarsAPI";
-import InteriorsAPI from "../services/InteriorsAPI";
-import ExteriorsAPI from "../services/ExteriorsAPI";
-import RoofsAPI from "../services/RoofsAPI";
-import WheelsAPI from "../services/WheelsAPI";
-import calculateTotalPrice from "../utilities/calcprice";
+import "./CreateCar.css";
+import CarsAPI from "../../services/CarsAPI";
+import InteriorsAPI from "../../services/InteriorsAPI";
+import ExteriorsAPI from "../../services/ExteriorsAPI";
+import RoofsAPI from "../../services/RoofsAPI";
+import WheelsAPI from "../../services/WheelsAPI";
+import calculateTotalPrice from "../../utilities/calcprice";
 
 const CreateCar = () => {
   const [name, setName] = useState("");
