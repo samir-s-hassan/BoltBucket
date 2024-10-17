@@ -4,7 +4,7 @@ Submitted by: Samir Hassan
 
 About this web app: The web app is a car customization tool that allows users to create and manage their own CustomCar configurations. Built with React and connected to a PostgreSQL database, the app offers users various options for customizing aspects like the car's interior, exterior, wheels, and roof. Each choice updates a visual representation of the car, similar to what you'd see on an actual car website, allowing users to see their selections come to life. When users are satisfied with their choices, they can submit their customizations, which are saved to a list of created cars stored in the database. Users can also view, edit, or delete their saved configurations directly from the app. If a user attempts to save an invalid combination of features, they’ll receive an error message explaining the issue. The app also dynamically calculates and displays the total price of the selected options, making it easy for users to track the cost of their customizations.
 
-Time spent: 5 hours
+Time spent: 6 hours
 
 ## Required Features
 
@@ -27,9 +27,8 @@ The following **optional** features are implemented:
 
 - [X] Selecting particular options prevents incompatible options from being selected even before form submission
 
-The following **additional** features are implemented:
+## How to run
 
-- [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
@@ -41,7 +40,8 @@ GIF created with Kap
 
 ## Notes
 
-Describe any challenges encountered while building the app or any additional context you'd like to add.
+- I should've planned out the routes better prior to doing the frontend application. I thought I had them planned out pretty well till I started coding more on the frontend. I was constantly updating routes to support the needs of my frontend CRUD functions. Certain routes needed extra details while other routes weren't used at all. If I had planned better while considering user stories (i.e. the information requested and responded with each time a user wanted to execute an action), then this app would be a lot easier to code.
+- I enjoyed the power of routing and links. It helps the React app tremendously. I can set up the Path in my App.jsx and then from anywhere in the files I can call Link and send it to the link.
 
 ## License
 
