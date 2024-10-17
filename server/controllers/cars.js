@@ -26,7 +26,6 @@ const getCars = async (req, res) => {
   }
 };
 
-// Function to get a car by its ID
 // Function to get a car by its ID, including component prices and total price calculation
 const getCarById = async (req, res) => {
   const { carId } = req.params;
@@ -39,12 +38,16 @@ const getCarById = async (req, res) => {
         c.isconvertible, 
         e.color AS exterior_color,
         e.price AS exterior_price,
+        e.exterior_id as exterior_id,
         r.color AS roof_color,
         r.price AS roof_price,
+        r.roof_id as roof_id,
         w.color AS wheel_color,
         w.price AS wheel_price,
+        w.wheel_id as wheel_id,
         i.color AS interior_color,
         i.price AS interior_price,
+        i.interior_id as interior_id,
         c.price AS base_price,
         -- Total price calculation
         c.price + e.price + w.price + i.price + COALESCE(r.price, 0) AS total_price
@@ -71,10 +74,12 @@ const getCarById = async (req, res) => {
       exterior: {
         color: car.exterior_color,
         price: car.exterior_price,
+        id: car.exterior_id,
       },
       interior: {
         color: car.interior_color,
         price: car.interior_price,
+        id: car.interior_id,
       },
       roof: car.isconvertible
         ? null
@@ -82,10 +87,12 @@ const getCarById = async (req, res) => {
             // Only include roof details if not a convertible
             color: car.roof_color,
             price: car.roof_price,
+            id: car.roof_id,
           },
       wheels: {
         color: car.wheel_color,
         price: car.wheel_price,
+        id: car.wheel_id,
       },
       basePrice: car.base_price,
       totalPrice: car.total_price,
