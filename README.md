@@ -34,7 +34,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-https://imgur.com/gallery/
+https://drive.google.com/file/d/1Qzuc2x5yd29X3Y_RNh4s7RT45MVIuxqv/view?usp=drive_link
 
 GIF created with Kap
 
