@@ -1,0 +1,59 @@
+.car-details {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--card-background-color);
+    color: var(--color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family);
+  }
+  
+  .car-details h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--h2-color);
+    margin-bottom: 20px;
+  }
+  
+  .car-part {
+    margin-bottom: 15px;
+  }
+  
+  .car-part p {
+    font-size: 1.1rem;
+    color: var(--color);
+  }
+  
+  .total-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--primary);
+  }
+  
+  .edit-button,
+  .delete-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+  
+  .delete-button {
+    background-color: #d9534f;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: var(--primary-hover);
+  }
+  
