@@ -24,7 +24,7 @@ const ViewCars = () => {
       <h2>All Custom Cars</h2>
       <div className="cars-container">
         {cars.map((car) => (
-          <div key={car.id} className="car-card">
+          <div key={car.car_id} className="car-card">
             <h3>{car.name}</h3>
             <p><strong>Exterior:</strong> {car.exterior_color}</p>
             <p><strong>Interior:</strong> {car.interior_color}</p>
@@ -36,8 +36,8 @@ const ViewCars = () => {
             <p><strong>Wheels:</strong> {car.wheel_color}</p>
             <p><strong>Price:</strong> ${car.price}</p>
             {/* Details button */}
-            <Link to={`/customcars/${car.id}`} className="details-button">
-              View Details
+            <Link to={`/customcars/${car.car_id}`} className="details-button">
+              Details
             </Link>
           </div>
         ))}

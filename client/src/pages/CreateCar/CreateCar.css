@@ -1,81 +1,124 @@
 .create-car {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.7); /* White background with 70% opacity */
-    backdrop-filter: blur(10px); /* Adds a slight blur effect to the background */
-  }
-  
-  .create-car h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .car-form .form-group {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .car-form .form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  .car-form .form-group input,
-  .car-form .form-group select {
-    padding: 8px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  .car-form .checkbox-group {
-    display: flex;
-    align-items: center;
-  }
-  
-  .car-form .checkbox-group label {
-    margin-right: 10px;
-  }
-  
-  .submit-button {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Styling for the total price display */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-background-color); /* Matches card style */
+  color: var(--color);
+  backdrop-filter: blur(10px); /* Adds a slight blur effect to the background */
+  font-family: var(--font-family);
+}
+
+.create-car h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--h2-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.car-form .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.car-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--color);
+  font-family: var(--font-family);
+}
+
+.car-form .form-group input,
+.car-form .form-group select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--form-element-active-border-color);
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for input fields */
+  color: #333;
+}
+
+.car-form .form-group input::placeholder,
+.car-form .form-group select::placeholder {
+  color: var(--form-element-placeholder-color);
+}
+
+.car-form .checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.car-form .checkbox-group label {
+  margin-right: 10px;
+  color: var(--color);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color);
+  background-color: var(--primary);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  text-transform: uppercase;
+  font-family: var(--font-family);
+}
+
+.submit-button:hover {
+  background-color: var(--primary-hover);
+  border: 2px solid var(--color);
+}
+
+/* Styling for the total price display */
 .car-form .total-price {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #333; /* Dark text for visibility */
-    padding: 8px;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    border-radius: 4px;
-    margin-top: 10px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  .option-group {
-    margin: 20px 0;
-  }
-  
-  .option-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }  
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--h1-color); /* Dark text for visibility */
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 4px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option-group {
+  margin: 20px 0;
+  color: var(--color);
+}
+
+.option-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option-card {
+  flex: 1 1 calc(50% - 10px);
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.3s ease;
+  font-family: var(--font-family);
+}
+
+.option-card:hover {
+  border-color: var(--form-element-active-border-color);
+}
+
+.option-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
